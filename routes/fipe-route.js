@@ -17,9 +17,9 @@ router.get('/:tipo/marcas/:fabricante/modelos', function(req, res, next) {
 	});
 });
 
-//modelos
+//anos
 router.get('/:tipo/marcas/:fabricante/modelos/:modelo/anos', function(req, res, next) {
-	fipeDao.listAnos(req.params.tipo, req.params.fabricante, req.params.modelo, function(result) {
+	fipeDao.listAnos(req.params.tipo, req.params.modelo, function(result) {
 		res.json(result.rows);
 	});
 });

@@ -38,7 +38,7 @@ var fipeDao = (function(){
 		listModelos: function(tipo, fabricante, callback) {
 			execute(callback, sqlModelos, [tipo, fabricante]);
 		},
-		listAnos: function(tipo, fabricante, modelo, callback) {
+		listAnos: function(tipo, modelo, callback) {
 			execute(callback, sqlAnos, [tipo, modelo]);
 		}
 	}

@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var bancos = require('./routes/febraban-route');
 var fipe = require('./routes/fipe-route');
+var federacao = require('./routes/federacao-route');
 
 var app = express();
 
@@ -20,8 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/bancos', bancos);
-app.use('/fipe', fipe);
+app.use('/api/v1/bancos', bancos);
+app.use('/api/v1/fipe', fipe);
+app.use('/api/v1/federacao', federacao);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,6 +55,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
