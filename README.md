@@ -177,3 +177,21 @@ Retorno:
 	{"uf":"PA","ibge":"1500859","nome":"Anapu"}
 ]
 ```
+
+#### Consulta por nome
+
+Acesse através da URL:
+
+```
+http://localhost:3001/api/v1/federacao/estados/:uf/municipios/n/:nome
+```
+
+onde __:nome__ é todo ou parte do nome do município. O serviço não faz diferença entre maiúsculas e minúsculas.
+
+Retorno:
+
+```json
+[
+	{"uf":"PA","ibge":"1500859","nome":"Anapu"}
+]
+```

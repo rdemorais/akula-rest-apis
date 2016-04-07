@@ -24,4 +24,11 @@ router.get('/estados/:uf/municipios/:ibge', function(req, res, next) {
 	});
 });
 
+//municipios por nome
+router.get('/estados/:uf/municipios/n/:nome', function(req, res, next) {
+	federacaoDao.findMunicipioNome(req.params.uf, req.params.nome, function(result) {
+		res.json(result.rows);
+	});
+});
+
 module.exports = router;
