@@ -1,7 +1,7 @@
 # akula-rest-apis
 RESP APIs para estados e municípios, bancos da FEBRABAN e FIPE
 
-### Para começar atualize as dependencias
+### Para começar, execute o comando a seguir na raiz:
 
 ```
 npm install

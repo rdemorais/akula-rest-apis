@@ -1,6 +1,5 @@
 var pg = require('pg');
 var conString = "postgres://akula_api:serenaya@localhost/akula_rest_api";
-
 dao = (function(){
 	return {
 		execute: function(callback, sql, param) {
