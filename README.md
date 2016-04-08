@@ -195,3 +195,13 @@ Retorno:
 	{"uf":"PA","ibge":"1500859","nome":"Anapu"}
 ]
 ```
+
+## Tratamento de erro
+
+Caso ocorra algum erro durante o processamento da solicitação, uma mensagem no formato a seguir será enviada:
+
+```json
+{"erro":"Not Found","det":{"status":404}}
+```
+
+Onde __det__ vai informar o detalhe do erro.
