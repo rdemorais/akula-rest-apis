@@ -1,5 +1,5 @@
 var pg = require('pg');
-var conString = "postgres://adminynibhn4:MZKxcFtPufY7@localhost/restapi";
+var conString = "postgres://[USER]:[PASS]@localhost/restapi";
 dao = (function(){
 	return {
 		execute: function(callback, sql, param) {

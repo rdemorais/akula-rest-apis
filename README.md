@@ -22,7 +22,7 @@ Este serviço permite listar **MARCAS**, **MODELOS** e **ANOS** dos veículos, d
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/fipe/:tipoVeiculo/marcas
+http://restapi-akkula.rhcloud.com/api/v1/fipe/:tipoVeiculo/marcas
 ```
 
 onde __:tipoVeiculo__ pode ser:
@@ -46,7 +46,7 @@ O serviço retornará os dados no formato:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/fipe/:tipoVeiculo/marcas/:codigoMarca/modelos
+http://restapi-akkula.rhcloud.com/api/v1/fipe/:tipoVeiculo/marcas/:codigoMarca/modelos
 ```
 
 onde __:codigoMarca__ é o que código extraído do serviço anterior.
@@ -65,7 +65,7 @@ Retorno:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/fipe/:tipoVeiculo/marcas/:codigoMarca/modelos/:codigoModelo/anos
+http://restapi-akkula.rhcloud.com/api/v1/fipe/:tipoVeiculo/marcas/:codigoMarca/modelos/:codigoModelo/anos
 ```
 
 onde __:codigoModelo__ é o que código extraído do serviço anterior.
@@ -88,7 +88,7 @@ A lista de bancos associados da [FEBRABAN](http://www.febraban.org.br/Bancos.asp
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/bancos
+http://restapi-akkula.rhcloud.com/api/v1/bancos
 ```
 
 Retorno: 
@@ -105,7 +105,7 @@ Retorno:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/bancos/codigo/:codigo
+http://restapi-akkula.rhcloud.com/api/v1/bancos/codigo/:codigo
 ```
 
 onde __:codigo__ é o código FEBRABAN do banco.
@@ -115,7 +115,7 @@ onde __:codigo__ é o código FEBRABAN do banco.
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/bancos/nome/:nome
+http://restapi-akkula.rhcloud.com/api/v1/bancos/nome/:nome
 ```
 
 onde __:nome__ é o nome do banco. Aqui é possível inserir parte do nome do banco.
@@ -129,7 +129,7 @@ A partir da planilha disponibilizada pelo [IBGE](http://www.ibge.gov.br/home/), 
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/federacao/estados
+http://restapi-akkula.rhcloud.com/api/v1/federacao/estados
 ```
 
 A lista de estados tem o seguinte formato:
@@ -146,7 +146,7 @@ A lista de estados tem o seguinte formato:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/federacao/estados/:uf/municipios
+http://restapi-akkula.rhcloud.com/api/v1/federacao/estados/:uf/municipios
 ```
 
 onde __:uf__ é o código da UF do município do formato AA, por exemplo, para informar Pará -> PA.
@@ -165,7 +165,7 @@ Retorno:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/federacao/estados/:uf/municipios/:ibge
+http://restapi-akkula.rhcloud.com/api/v1/federacao/estados/:uf/municipios/:ibge
 ```
 
 onde __:ibge__ é o código do município.
@@ -183,7 +183,7 @@ Retorno:
 Acesse através da URL:
 
 ```
-http://localhost:3001/api/v1/federacao/estados/:uf/municipios/n/:nome
+http://restapi-akkula.rhcloud.com/api/v1/federacao/estados/:uf/municipios/n/:nome
 ```
 
 onde __:nome__ é todo ou parte do nome do município. O serviço não faz diferença entre maiúsculas e minúsculas.
