@@ -1,5 +1,9 @@
 # akula-rest-apis
-RESP APIs para estados e municípios, bancos da FEBRABAN e FIPE
+RESP APIs para estados e municípios, bancos da FEBRABAN, FIPE e CEP de todo o Brasil.
+
+### Docker
+
+Está disponível uma imagem Docker que contém este código: https://hub.docker.com/r/rdemorais/akula-dc-api/
 
 ### Para começar, execute o comando a seguir na raiz:
 
@@ -195,6 +199,11 @@ Retorno:
 	{"uf":"PA","ibge":"1500859","nome":"Anapu"}
 ]
 ```
+
+#### CEP
+
+Acessar...
+
 
 ## Tratamento de erro
 

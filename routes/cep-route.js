@@ -5,7 +5,7 @@ var cepDao = require('../dao/cepDao.js');
 
 //logradouro por cep
 router.get('/:cep', function(req, res, next) {
-	cepDao.findLogradouroByCep(function(result) {
+	cepDao.findLogradouroByCep(req.params.cep, function(result) {
 		res.json(result.rows);
 	});
 });
