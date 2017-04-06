@@ -1,4 +1,5 @@
 var pg = require('pg');
+var fs   = require('fs');
 const yaml = require('js-yaml');
 const config = yaml.safeLoad(fs.readFileSync('/opt/db/dbconfig.yml', 'utf8'));
 
