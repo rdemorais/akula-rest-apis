@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var bancos = require('./routes/febraban-route');
 var fipe = require('./routes/fipe-route');
 var federacao = require('./routes/federacao-route');
+var cep = require('./routes/cep-route');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use(function(req, res, next) {
 app.use('/api/v1/bancos', bancos);
 app.use('/api/v1/fipe', fipe);
 app.use('/api/v1/federacao', federacao);
+app.use('/api/v1/cep', cep);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
