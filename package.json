@@ -15,6 +15,7 @@
     "pg": "^4.5.2",
     "serve-favicon": "~2.4.2",
     "monk": "^4.0.0",
-    "optimist": "^0.6.1"
+    "optimist": "^0.6.1",
+    "js-yaml": "^3.8.3"
   }
 }

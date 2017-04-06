@@ -1,10 +1,11 @@
 var pg = require('pg');
-var params = require('optimist').argv;
+const yaml = require('js-yaml');
+const config = yaml.safeLoad(fs.readFileSync('/opt/db/dbconfig.yml', 'utf8'));
 
-var user 	= params.u;
-var passwd 	= params.p;
-var host	= params.h;
-var db		= params.d; 
+var user 	= config.user;
+var passwd 	= config.passwd;
+var host	= config.host;
+var db		= config.db; 
 
 var conString = "postgres://"+user+":"+passwd+"@"+host+"/"+db;
 dao = (function(){
