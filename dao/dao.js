@@ -1,5 +1,12 @@
 var pg = require('pg');
-var conString = "postgres://[USER]:[PASS]@localhost/restapi";
+var params = require('optimist').argv;
+
+var user 	= params.u;
+var passwd 	= params.p;
+var host	= params.h;
+var db		= params.d; 
+
+var conString = "postgres://"+user+":"+passwd+"@"+host+"/"+db;
 dao = (function(){
 	return {
 		execute: function(callback, sql, param) {
